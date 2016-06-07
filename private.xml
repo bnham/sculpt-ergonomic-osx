@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Button remapping for the MS Sculpt Ergonomic in OS X using Karabiner.
+
+  See https://blog.yorkxin.org/posts/2014/04/12/microsoft-sculpt-mobile-mouse-and-mac/ for how to do
+  something like this for the Sculpt Comfort (rather than Sculpt Ergonomic) mouse.
+
+  See https://pqrs.org/osx/karabiner/xml.html.en#basic-syntax for private.xml syntax docs.
+-->
+<root>
+  <!--
+    Adds the Sculpt Ergonomic's product IDs to the DB.
+  -->
+  <deviceproductdef>
+    <productname>SCULPT_ERGONOMIC</productname>
+    <productid>0x07a5</productid>
+  </deviceproductdef>
+
+  <!--
+    Binds the context menu key (to the right of the right alt key) to the option key.
+  -->
+  <item>
+    <name>Context Menu Key to Option Key</name>
+    <identifier>com.microsoft.mouse.sculptergonomic.context_menu_key_to_option_key</identifier>
+    <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+    <autogen>
+      __KeyToKey__
+      KeyCode::PC_APPLICATION,
+      KeyCode::OPTION_L
+    </autogen>
+  </item>
+
+  <!--
+    Binds the Windows button  to button5. Useful if you want to just use another tool (like
+    BetterTouchTool) to further customize mouse input.
+  -->
+  <item>
+    <name>Windows Button to Mouse Button 5 (Microsoft Sculpt Ergonomic Mouse)</name>
+    <identifier>com.microsoft.mouse.sculptergonomic.win_button</identifier>
+    <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+    <autogen>__KeyToKey__
+        KeyCode::OPTION_R,
+        KeyCode::VK_MOUSEKEY_BUTTON_BUTTON5
+      </autogen>
+  </item>
+
+  <!--
+    Binds the Windows button to Mission Control.
+  -->
+  <item>
+    <name>Windows Button to Mission Control (Microsoft Sculpt Ergonomic Mouse)</name>
+    <identifier>com.microsoft.mouse.sculptergonomic.win_button_to_mission_control</identifier>
+    <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+    <autogen>
+      __KeyToKey__
+      KeyCode::OPTION_R,
+      KeyCode::MISSION_CONTROL
+    </autogen>
+  </item>
+
+  <!--
+    Binds the back button to Cmd+[, which is the key combo for back in most apps.
+  -->
+  <item>
+    <name>Back Button to Cmd+[ (Microsoft Sculpt Ergonomic Mouse)</name>
+    <identifier>com.microsoft.mouse.sculptergonomic.back_button_to_cmd_left_bracket</identifier>
+    <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+    <autogen>
+      __KeyToKey__
+      PointingButton::BUTTON4,
+      ModifierFlag::NONE,
+      KeyCode::BRACKET_LEFT,
+      ModifierFlag::COMMAND_L
+    </autogen>
+  </item>
+
+  <!--
+    Binds left scroll to Cmd+Shift+[, which is previous tab in most apps.
+  -->
+  <item>
+    <name>Left Scroll to Cmd+Shift+[ (Microsoft Sculpt Ergonomic Mouse)</name>
+    <identifier>com.microsoft.mouse.sculptergonomic.scroll_left_to_cmd_shift_left</identifier>
+    <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+    <autogen>
+      __ScrollWheelToKey__
+      ScrollWheel::LEFT,
+      ModifierFlag::NONE,
+      KeyCode::BRACKET_LEFT,
+      ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+    </autogen>
+  </item>
+
+  <!--
+    Binds right scroll to Cmd+Shift+], which is next tab in most apps.
+  -->
+  <item>
+    <name>Right Scroll to Cmd+Shift+] (Microsoft Sculpt Ergonomic Mouse)</name>
+    <identifier>com.microsoft.mouse.sculptergonomic.scroll_right_to_cmd_shift_right</identifier>
+    <device_only>DeviceVendor::MICROSOFT,DeviceProduct::SCULPT_ERGONOMIC</device_only>
+    <autogen>
+      __ScrollWheelToKey__
+      ScrollWheel::RIGHT,
+      ModifierFlag::NONE,
+      KeyCode::BRACKET_RIGHT,
+      ModifierFlag::COMMAND_L | ModifierFlag::SHIFT_L
+    </autogen>
+  </item>
+</root>
