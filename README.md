@@ -1,8 +1,8 @@
-I recently bought a Microsoft Sculpt Ergonomic keyboard and mouse for use with
-my Mac OS X laptop. Unfortunately, Microsoft has dropped support for their
-keyboard and mice via their Intellipoint driver as of Lion, so to use some of
-the extra keys on the mouse, you have to resort to third-party utilities like
-[Karabiner](https://pqrs.org/osx/karabiner/) or
+I recently bought a Microsoft Sculpt Ergonomic Desktop keyboard and mouse set
+for use with my Mac OS X laptop. Unfortunately, Microsoft has dropped support
+for their keyboard and mice via their Intellipoint driver as of Lion, so to use
+some of the extra keys on the mouse, you have to resort to third-party utilities
+like [Karabiner](https://pqrs.org/osx/karabiner/) or
 [BetterTouchTool](https://www.boastr.net).
 
 This repo contains a private.xml file for use with Karabiner that remaps the
