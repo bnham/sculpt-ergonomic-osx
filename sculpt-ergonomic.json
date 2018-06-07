@@ -83,32 +83,6 @@
           "type": "basic"
         }
       ]
-    },
-    {
-      "description": "Next desktop if back button and right button are pressed",
-      "manipulators": [
-        {
-          "from": {
-            "simultaneous": [
-              {
-                "pointing_button": "button4"
-              },
-              {
-                "pointing_button": "button2"
-              }
-            ]
-          },
-          "to": [
-            {
-              "key_code": "right_arrow",
-              "modifiers": [
-                "left_control"
-              ]
-            }
-          ],
-          "type": "basic"
-        }
-      ]
     }
   ]
 }
