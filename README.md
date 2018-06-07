@@ -5,6 +5,15 @@ some of the extra keys on the mouse, you have to resort to third-party utilities
 like [Karabiner](https://pqrs.org/osx/karabiner/) or
 [BetterTouchTool](https://www.boastr.net).
 
+## Getting Started with [Karabiner-Elements](https://pqrs.org/osx/karabiner/)
+
+* Install [Karabiner-Elements](https://pqrs.org/osx/karabiner/)
+* Copy `sculpt-ergonomic.json` to `~/.config/karabiner/assets/complex_modifications/sculpt-ergonomic.json`
+* Open Karabiner-Elements
+* Add the rules you want under the "Complex Modifications" tab
+
+## Getting started with [legacy Karabiner](https://pqrs.org/osx/karabiner/xml.html)
+
 This repo contains a private.xml file for use with Karabiner that remaps the
 following keys:
 
