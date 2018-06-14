@@ -1,0 +1,88 @@
+{
+  "title": "Rules for use with the Microsoft Sculpt keyboard and mouse",
+  "rules": [
+    {
+      "description": "Map Back button to (Command + [)",
+      "manipulators": [
+        {
+          "from": {
+            "pointing_button": "button4"
+          },
+          "to": [
+            {
+              "key_code": "open_bracket",
+              "modifiers": [
+                "left_command"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Map Windows button to Mission Control",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "right_command"
+          },
+          "to": [
+            {
+              "key_code": "mission_control"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Previous desktop if left control and Windows button are pressed",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "right_command",
+            "modifiers": {
+              "mandatory": [
+                "left_control"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
+      "description": "Next desktop if left command and Windows button are pressed",
+      "manipulators": [
+        {
+          "from": {
+            "key_code": "right_command",
+            "modifiers": {
+              "mandatory": [
+                "left_command"
+              ]
+            }
+          },
+          "to": [
+            {
+              "key_code": "right_arrow",
+              "modifiers": [
+                "left_control"
+              ]
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    }
+  ]
+}
