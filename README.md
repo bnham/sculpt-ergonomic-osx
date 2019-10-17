@@ -21,3 +21,22 @@ following keys:
 
 After loading the private.xml file in Karabiner, you can use Karabiner's GUI to
 select which of these key remappings to use.
+
+---
+
+Karabiner stopped working because of the keyboard driver architecture changes at macOS Sierra. Thus, [Karabiner-Elements](https://github.com/tekezo/Karabiner-Elements#karabiner-elements) was made from scratch for new macOS.
+
+This repo contains a karabiner.json file for use with [Karabiner-Elements](https://pqrs.org/osx/karabiner/json.html) that remaps the following keys:
+
+- left_gui (equal to \`left_command\`) -> left_contrl
+- left_control -> legt_gui (equal to \`left_command\`)
+- `f1`...`f12` key codes to macOS counterpart
+
+You can now use the standard/non-macOS "copy and paste" workflow and `f*` keys.
+
+Upload the file to ~/.config/karabiner/karabiner.json then you can use Karabiner's GUI to
+select which of these key remappings to use.
+
+[karabiner.json Reference Manual](https://pqrs.org/osx/karabiner/json.html)
+
+
